@@ -1,0 +1,214 @@
+/*Pagina de estilos CSS de una Landing Page de un curso*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*Se define el tamaño del viewport y el color del background*/
+.contenedor-gral{
+  height: 100vh;
+  background-color: #474747;
+}
+/*Se formatea el contador de la oferta*/
+.contador{
+  background-color: rgba(221, 6, 6, 0.948);
+  color: white;
+  font-size: 2rem;
+  height: 10%;
+  width: 100%;
+  display:flex;
+  gap: .5rem;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.reloj-conta{
+  text-decoration:solid;
+}
+/*Se define el color y el tipo de la letra; el ancho de la página principal*/
+.pag-principal{
+  color:goldenrod;
+  font-family: 'Kalam', cursive;
+  width: 80%;
+  margin: 0 auto;
+  
+}
+/*Se formatean los títulos principales*/
+.titulos{
+  margin: 0 auto;
+  text-align: center;
+}
+h1{
+  font-size: 3rem;
+  padding: 4rem 0 0;
+}
+/*Se formatea el contenedor del video alto, ancho y al centro*/
+.video-contenedor{
+  background-color: yellow;
+  width: 65%;
+  height: 26.25rem;
+  margin: 1rem auto;
+}
+/*.video-contenedor div{
+  background-color: green;
+  height: 100%;
+  text-align: center;
+}*/
+.video-video{
+  height: 100%;
+  width: 100%;
+}
+/*Se formatean los dolores en la pagina*/
+.dolores{
+  width: 80%;
+  color:#D92D07;
+  font-size: 1.5rem;
+  display:grid;
+  align-content: center;
+  margin: 2rem auto;
+}
+.dolor{
+  display:flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+/*Se formatea el cuetionamiento*/
+.desicion{
+  color:white;
+  margin: 1rem 0;
+}
+/* Se centra la imagen del precio*/
+.precio{
+  text-align: center;
+}
+/* Se formatea el contenedor de los elemento del boton de compra*/
+.btn-cont{
+  text-align: center;
+}
+/*Formateo del tamaño de las flechas a los lados del boton*/
+.flecha{
+  width: 12.5rem;
+  height: 6.25rem;
+}
+/*Se añade desplazamiento de las flechas*/
+.fder{
+  animation-name: mover-der;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate ;
+}
+@keyframes mover-der {
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform: translate(50%);
+  }
+}
+.fizq{
+  animation-name: mover-izq;
+  animation-duration:1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes mover-izq {
+  0%{
+    transform: translate(0);
+  }
+  100%{
+    transform: translate(-50%);
+  }
+}
+/* Se formatean todos los h2*/
+.subtit{
+  font-size: 2rem;
+  margin: 1rem;
+}
+/*Se formatean el que y como lograr*/
+.content-logros{
+  display:flex;
+  gap: 1rem;
+}
+.que-lograr{
+  width: 60%;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+li{
+  margin-left: 2rem;
+  color: white;
+}
+.cuadro-valor{
+  width: 40%;
+}
+.certif{
+  width: 100%;
+}
+/*Se formatea el contenido del curso como acordeon solo CSS*/
+details{
+  background-color: #D92D07;
+  color: black;
+  padding: .5rem;
+  border-radius: 0.625rem;
+  margin: .5rem 2rem;
+  cursor:pointer;
+  font-size: 1rem;
+}
+/*Se formatea la seccion del los datos del productor del curso*/
+.productor{
+  width: 90%;
+  display:flex;
+  font-size: 1.1rem;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+.dat-productor{
+  color:white;
+}
+/* Se formatean los testimonios*/
+.testimonios{
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.contenido_curso{
+  width: 90%;
+  color:#D92D07;
+  font-size: 1.5rem;
+  display:grid;
+  align-content: center;
+  margin: 2rem auto;
+}
+.conten{
+  display:flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+/*Se formatea el pie de página*/
+footer{
+ background-color: #F2C46D;
+ text-align: center;
+}
+.aaprender{
+  width:20%;
+  padding: 1rem 0 0;
+}
+.respyder{
+  width: 60%;
+  margin: 0 auto;  
+}
+.redesoc{
+  display:flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.redesoc img{
+  width: 3rem;
+}
+.politica{
+  padding-bottom: 1rem;
+}
