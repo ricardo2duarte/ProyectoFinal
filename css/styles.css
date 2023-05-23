@@ -187,6 +187,13 @@ details{
   justify-content: space-around;
   align-items: center;  
 }
+.ctafinal{
+  width: 75%;
+  margin: 2rem auto 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+}
 
 /*Se formatea el pie de página*/
 footer{
