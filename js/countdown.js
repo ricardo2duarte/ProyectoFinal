@@ -25,7 +25,7 @@ let iterarCountDown = setInterval(() => {
     const hours = Math.floor((time/60)/60);
     const minutes = Math.floor((time/60)%60);
     let seconds = time % 60;
-    countDownEl.innerHTML = `<strong>¡Aprovecha la oferta por: ${hours} horas ${minutes} minutos ${seconds} segundos!</strong>`;
+    countDownEl.innerHTML = `<strong>${hours} horas ${minutes} minutos ${seconds} segundos!</strong>`;
     time--;
     let timo = time;
     localStorage.setItem("tiempo", timo);

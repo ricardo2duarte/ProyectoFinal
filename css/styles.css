@@ -8,64 +8,69 @@
 /*Se define el tamaño del viewport y el color del background*/
 .contenedor-gral{
   height: 100vh;
+  width: 100vw;
   background-color: #474747;
+  margin: 0 auto;
 }
 /*Se formatea el contador de la oferta*/
 .contador{
   background-color: rgba(221, 6, 6, 0.948);
   color: white;
   font-size: 2rem;
-  height: 10%;
+  height: 15vh;
   width: 100%;
   display:flex;
   gap: .5rem;
   justify-content: center;
   align-items: center;
   position: fixed;
+  flex-wrap: wrap;
 }
-.reloj-conta{
-  text-decoration:solid;
+.contador p, .reloj-conta{
+  text-decoration:solid
 }
 /*Se define el color y el tipo de la letra; el ancho de la página principal*/
 .pag-principal{
   color:goldenrod;
   font-family: 'Kalam', cursive;
-  width: 80%;
+  width: 80vw;
   margin: 0 auto;
-  
+  align-items: center;
 }
 /*Se formatean los títulos principales*/
 .titulos{
-  margin: 0 auto;
+/*  margin: 0 auto;*/
   text-align: center;
+
 }
 h1{
   font-size: 3rem;
-  padding: 4rem 0 0;
+  padding-top: 7rem;
 }
 /*Se formatea el contenedor del video alto, ancho y al centro*/
 .video-contenedor{
-  background-color: yellow;
-  width: 65%;
-  height: 26.25rem;
-  margin: 1rem auto;
+  width: 70vw;
+  height: 400px;
+  max-width: 700px;
+  min-width: 320px;
+  min-height: 150px;
+  margin: 0 auto;
+  display:block;
 }
-/*.video-contenedor div{
-  background-color: green;
-  height: 100%;
-  text-align: center;
-}*/
-.video-video{
-  height: 100%;
+.video-contenedor iframe{
   width: 100%;
+  height: 100%;
+  top:0px;
+  left:0px;
 }
 /*Se formatean los dolores en la pagina*/
 .dolores{
-  width: 80%;
+  width: 100%;
   color:#D92D07;
   font-size: 1.5rem;
-  display:grid;
-  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr 2 fr;
+  align-items: center;
   margin: 2rem auto;
 }
 .dolor{
@@ -74,23 +79,35 @@ h1{
   justify-content: space-around;
   align-items: center;
 }
-/*Se formatea el cuetionamiento*/
+/*Se formatea el cuestionamiento*/
 .desicion{
   color:white;
   margin: 1rem 0;
 }
 /* Se centra la imagen del precio*/
 .precio{
+  min-width: 150px;
+  width: 100%;
   text-align: center;
+}
+.precio img{
+  width: 100%;
 }
 /* Se formatea el contenedor de los elemento del boton de compra*/
 .btn-cont{
+  min-width: 200px;
   text-align: center;
+}
+.btn-link{
+  width: 500px;
+}
+.btn-link img{
+  width: 100%;
 }
 /*Formateo del tamaño de las flechas a los lados del boton*/
 .flecha{
-  width: 12.5rem;
-  height: 6.25rem;
+  width: 10rem;
+  height: 6rem;
 }
 /*Se añade desplazamiento de las flechas*/
 .fder{
@@ -218,4 +235,24 @@ footer{
 }
 .politica{
   padding-bottom: 1rem;
+}
+
+@media (max-width: 939px) {
+  .flecha{
+    display:none;
+  }
+}
+
+@media (max-width: 750px) {
+  .dolor{
+    flex-direction: column;
+  }
+  .d2, .d4{
+    flex-direction: column-reverse;
+  }
+  .btn-compra{
+    width: 300px;
+  }
+  
+  
 }
