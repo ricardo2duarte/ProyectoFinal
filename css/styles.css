@@ -1,5 +1,4 @@
 /*Pagina de estilos CSS de una Landing Page de un curso*/
-
 *{
   margin: 0;
   padding: 0;
@@ -7,9 +6,10 @@
 }
 /*Se define el tamaño del viewport y el color del background*/
 .contenedor-gral{
-  height: 100vh;
+  background-color: rgba(71, 71, 71, 0.226);
+  background-image: url("../imgs/kanjis_1920x1080.jpg");
   width: 100vw;
-  background-color: #474747;
+  
   margin: 0 auto;
 }
 /*Se formatea el contador de la oferta*/
@@ -31,6 +31,7 @@
 }
 /*Se define el color y el tipo de la letra; el ancho de la página principal*/
 .pag-principal{
+
   color:goldenrod;
   font-family: 'Kalam', cursive;
   width: 80vw;
@@ -65,7 +66,7 @@ h1{
 }
 /*Se formatean los dolores en la pagina*/
 .dolores{
-  width: 100%;
+  width: 90%;
   color:#D92D07;
   font-size: 1.5rem;
   display: grid;
@@ -100,9 +101,6 @@ h1{
 }
 .btn-link{
   width: 500px;
-}
-.btn-link img{
-  width: 100%;
 }
 /*Formateo del tamaño de las flechas a los lados del boton*/
 .flecha{
@@ -145,23 +143,28 @@ h1{
 }
 /*Se formatean el que y como lograr*/
 .content-logros{
+  width: 95%;
   display:flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 .que-lograr{
-  width: 60%;
+  width: 55%;
   margin-left: 2rem;
   font-size: 1.5rem;
 }
 li{
+  width: 100%;
   margin-left: 2rem;
   color: white;
 }
 .cuadro-valor{
   width: 40%;
+  margin-right: 1rem;
+  margin:0 auto;
 }
 .certif{
   width: 100%;
+  
 }
 /*Se formatea el contenido del curso como acordeon solo CSS*/
 details{
@@ -176,13 +179,13 @@ details{
 /*Se formatea la seccion del los datos del productor del curso*/
 .productor{
   width: 90%;
-  display:flex;
   font-size: 1.1rem;
-  gap: 1rem;
   margin: 1rem auto;
 }
-.dat-productor{
+.productor img{
   color:white;
+  float:left;
+  margin-right: 2rem;
 }
 /* Se formatean los testimonios*/
 .testimonios{
@@ -238,12 +241,38 @@ footer{
 }
 
 @media (max-width: 939px) {
+  .contenedor-gral{
+   font-size: 12px;
+  }
   .flecha{
     display:none;
+  }
+  .content-logros{
+    width: 90%;
+    
+    flex-direction:column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .que-lograr{
+    width:100%;
+    margin-left: 0;
+  }
+  .cuadro-valor{
+    width: 50%;
+  }
+  .conten{
+    flex-direction: column;
+  }
+  .c2, .c4, .c6{
+    flex-direction: column-reverse;
   }
 }
 
 @media (max-width: 750px) {
+  .contenedor-gral{
+    font-size: 10px;
+   }
   .dolor{
     flex-direction: column;
   }
