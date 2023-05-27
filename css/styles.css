@@ -6,10 +6,12 @@
 }
 /*Se define el tamaño del viewport y el color del background*/
 .contenedor-gral{
-  background-color: rgba(71, 71, 71, 0.226);
-  background-image: url("../imgs/kanjis_1920x1080.jpg");
-  width: 100vw;
   
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../imgs/sakura.jpg");
+  /*background-color: rgba(71, 71, 71, 1);*/
+
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
 }
 /*Se formatea el contador de la oferta*/
@@ -25,6 +27,7 @@
   align-items: center;
   position: fixed;
   flex-wrap: wrap;
+  z-index: 2;
 }
 .contador p, .reloj-conta{
   text-decoration:solid
@@ -164,7 +167,6 @@ li{
 }
 .certif{
   width: 100%;
-  
 }
 /*Se formatea el contenido del curso como acordeon solo CSS*/
 details{
@@ -192,7 +194,21 @@ details{
   margin: 1rem auto;
   text-align: center;
 }
-
+.testim{
+  background-color: beige;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+.testim img{
+  width: 4rem;
+}
+.testim p{
+  color:#D92D07;
+}
+.testim p, span{
+  font-size: 1rem;
+}
 .contenido_curso{
   width: 90%;
   color:#D92D07;
@@ -217,8 +233,11 @@ details{
 
 /*Se formatea el pie de página*/
 footer{
- background-color: #F2C46D;
- text-align: center;
+  background-image: url("../imgs/fondoChinoRojo.jpg");
+  background-size:contain;
+  opacity: 1;
+  text-align: center;
+  color:white;
 }
 .aaprender{
   width:20%;
@@ -226,7 +245,8 @@ footer{
 }
 .respyder{
   width: 60%;
-  margin: 0 auto;  
+  margin: 0 auto .5rem;
+
 }
 .redesoc{
   display:flex;
@@ -235,11 +255,9 @@ footer{
 }
 .redesoc img{
   width: 3rem;
+  margin-bottom: 1rem;
 }
-.politica{
-  padding-bottom: 1rem;
-}
-
+/* ----- MEDIA QUERIES ----- */
 @media (max-width: 939px) {
   .contenedor-gral{
    font-size: 12px;
@@ -249,7 +267,6 @@ footer{
   }
   .content-logros{
     width: 90%;
-    
     flex-direction:column;
     justify-content: center;
     margin: 0 auto;
@@ -281,7 +298,5 @@ footer{
   }
   .btn-compra{
     width: 300px;
-  }
-  
-  
+  } 
 }
