@@ -17,7 +17,8 @@ if(isNaN(time)){
 }
 
 function mostrarCartelVenta(){
-    countDownEl.style.fontSize = `2rem`;
+    msgCounter.innerHTML = ``;
+//    countDownEl.style.fontSize = `2em`;
     countDownEl.innerHTML = `¡Lo sentimos, pero la oferta ya termino!`;
 }
 
@@ -25,7 +26,7 @@ let iterarCountDown = setInterval(() => {
     const hours = Math.floor((time/60)/60);
     const minutes = Math.floor((time/60)%60);
     let seconds = time % 60;
-    countDownEl.innerHTML = `<strong>${hours} horas ${minutes} minutos ${seconds} segundos!</strong>`;
+    countDownEl.innerHTML = `<p>Aprovecha la oferta por:</p><strong>${hours} horas ${minutes} minutos ${seconds} segundos!</strong>`;
     time--;
     let timo = time;
     localStorage.setItem("tiempo", timo);
